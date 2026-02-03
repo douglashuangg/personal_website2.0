@@ -5,10 +5,11 @@ function Navigation() {
   const location = useLocation();
 
   const getStyle = (path) => ({
-    color: 'inherit',
+    color: '#333333', /* Slightly lighter dark ink color */
     textDecoration: 'none',
-    transition: 'opacity 0.2s',
-    opacity: location.pathname === path ? 1 : 0.6,
+    transition: 'font-weight 0.2s, opacity 0.2s',
+    opacity: 1, /* Full opacity for all links */
+    fontWeight: location.pathname === path ? 'bold' : 'normal',
     display: 'flex',
     alignItems: 'center',
     gap: '0.5rem'
