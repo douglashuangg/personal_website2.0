@@ -56,7 +56,8 @@ function Navigation() {
       flexDirection: 'column',
       gap: '1rem',
       fontSize: '1.2rem',
-      paddingTop: '0.5rem'
+      paddingTop: '0.5rem',
+      width: '160px'
     }}>
       <AnimatedLink to="/" label="home" />
       <AnimatedLink to="/bookshelf" label="bookshelf" />
