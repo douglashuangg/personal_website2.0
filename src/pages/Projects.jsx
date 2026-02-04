@@ -2,7 +2,7 @@ import Layout from '../components/Layout'
 
 function Projects() {
   return (
-    <Layout title="projects">
+    <Layout title="projects & resume">
       <p style={{ 
         fontSize: '1.2rem',
         textAlign: 'left',

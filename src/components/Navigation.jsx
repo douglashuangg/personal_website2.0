@@ -61,7 +61,7 @@ function Navigation() {
     }}>
       <AnimatedLink to="/" label="home" />
       <AnimatedLink to="/bookshelf" label="bookshelf" />
-      <AnimatedLink to="/projects" label="projects" />
+      <AnimatedLink to="/projects" label="projects & resume" />
       <AnimatedLink to="/blog" label="blog" />
       <AnimatedLink to="/typing" label="typing" />
     </nav>
