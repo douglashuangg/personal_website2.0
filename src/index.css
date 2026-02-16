@@ -3,8 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color-scheme: light;
+  color: #000000;
   background-color: #242424;
 
   font-synthesis: none;
@@ -22,15 +22,31 @@ a:hover {
   color: #535bf2;
 }
 
-/* Hide scrollbar for all browsers */
-html {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  scrollbar-gutter: stable; /* Reserve space for scrollbar to prevent layout shifts */
+/* Custom thin scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-html::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari, Opera */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -39,11 +55,10 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-y: auto;
+  overflow-x: hidden;
   font-family: "Public Headline", Georgia, serif;
   
-  /* Hide scrollbar for all browsers */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+
   
   /* "Aura Blob" background - organic shapes using radial gradients (Balanced version) */
   background: 
@@ -54,10 +69,7 @@ body {
   background-attachment: fixed; /* Keep shapes static while content scrolls over them */
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-  display: none;
-}
+
 
 body::after {
   content: "";
@@ -104,15 +116,4 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+

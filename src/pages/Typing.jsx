@@ -45,10 +45,10 @@ function Typing() {
   }
 
   const reset = () => {
+    setIsFinished(false)
     setInput("")
     setStartTime(null)
     setWpm(0)
-    setIsFinished(false)
     setTimeout(() => {
       if (inputRef.current) inputRef.current.focus()
     }, 0)
@@ -99,7 +99,7 @@ function Typing() {
       >
         <p style={{ 
           fontSize: '1.2rem',
-          color: '#666',
+          color: '#000',
           margin: 0,
           marginBottom: '2rem',
           textAlign: 'left'
@@ -141,7 +141,7 @@ function Typing() {
 
         <div style={{ marginTop: '2rem', display: 'flex', alignItems: 'center', gap: '2rem' }}>
           <div>
-            <span style={{ fontSize: '0.9rem', color: '#888', display: 'block' }}>wpm</span>
+            <span style={{ fontSize: '0.9rem', color: '#000', display: 'block' }}>wpm</span>
             <span style={{ fontSize: '1.5rem', fontWeight: '500', color: '#333' }}>{wpm}</span>
           </div>
           <AnimatePresence>
@@ -155,7 +155,7 @@ function Typing() {
                   gap: '2rem'
                 }}
               >
-                <div style={{ color: '#64748b', fontWeight: '500' }}>
+                <div style={{ color: '#000', fontWeight: '500' }}>
                   {wpm >= DOUGLAS_RECORD ? `You're fast! You beat me! I typed this at ${DOUGLAS_RECORD} wpm.` : `Nice try. I typed this at ${DOUGLAS_RECORD} wpm.`}
                 </div>
                 <button 
@@ -164,7 +164,7 @@ function Typing() {
                     background: 'none',
                     border: '1px solid #333',
                     padding: '0.4rem 1rem',
-                    borderRadius: '4px',
+                    borderRadius: '20px',
                     cursor: 'pointer',
                     fontSize: '0.9rem'
                   }}
