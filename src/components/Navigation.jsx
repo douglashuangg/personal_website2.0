@@ -7,7 +7,6 @@ function Navigation() {
   const getStyle = (path) => ({
     color: '#333333', /* Slightly lighter dark ink color */
     textDecoration: 'none',
-    textTransform: 'uppercase',
     transition: 'font-weight 0.2s, opacity 0.2s',
     opacity: 1, /* Full opacity for all links */
     fontWeight: location.pathname === path ? 'bold' : 'normal',

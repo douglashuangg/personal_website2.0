@@ -36,7 +36,6 @@ function Layout({ title, children }) {
               fontWeight: '400',
               margin: 0,
               marginBottom: '3rem',
-              textTransform: 'uppercase'
             }}>
               {title}
             </h1>
