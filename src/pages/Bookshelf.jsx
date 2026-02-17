@@ -91,12 +91,12 @@ function Bookshelf() {
         <BookCover
           src="/project_hail_mary_cover.jpg"
           alt="Project Hail Mary"
-          summary="5/5: one of the top sci-fi books i've read"
+          summary="5/5: peak scifi"
         />
         <BookCover
           src="/name_of_the_wind.jpg"
           alt="The Name of the Wind"
-          summary="5/5: probably best fantasy series i've ever read"
+          summary="5/5: one of my top fantasy series"
         />
       </div>
     </Layout>

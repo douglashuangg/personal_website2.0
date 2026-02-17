@@ -74,11 +74,12 @@ function Navigation() {
   return (
     <nav style={{
       display: 'flex',
-      flexDirection: 'column',
-      gap: '1.5rem',
+      flexDirection: 'row',
+      gap: '2rem',
       fontSize: '1.2rem',
       paddingTop: '0.5rem',
-      width: '160px'
+      justifyContent: 'center',
+      flexWrap: 'wrap'
     }}>
       <AnimatedLink to="/" label="home" />
       <AnimatedLink to="/bookshelf" label="bookshelf" />
