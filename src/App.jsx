@@ -4,6 +4,7 @@ import Bookshelf from './pages/Bookshelf'
 import Projects from './pages/Projects'
 import Blog from './pages/Blog'
 import Typing from './pages/Typing'
+import SchoolNotes from './pages/SchoolNotes'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/typing" element={<Typing />} />
+        <Route path="/school-notes" element={<SchoolNotes />} />
       </Routes>
     </Router>
   )

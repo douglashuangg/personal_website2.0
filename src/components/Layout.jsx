@@ -1,6 +1,6 @@
 import Navigation from './Navigation'
 
-function Layout({ title, children }) {
+function Layout({ title, titleSize, children }) {
   return (
     <div style={{ 
       display: 'flex',
@@ -55,7 +55,7 @@ function Layout({ title, children }) {
             position: 'relative' // For reference
           }}>
             <h1 style={{ 
-              fontSize: '3.5rem', 
+              fontSize: titleSize || '3.5rem', 
               fontWeight: '400',
               margin: 0,
               marginBottom: '3rem',
