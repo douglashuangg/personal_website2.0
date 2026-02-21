@@ -46,6 +46,8 @@ function SchoolNotes() {
       flexDirection: 'column',
       minHeight: '100vh',
       width: '100%',
+      padding: '0 clamp(1rem, 4vw, 2rem)',
+      boxSizing: 'border-box',
     }}>
       {/* Navigation */}
       <div style={{
@@ -67,14 +69,16 @@ function SchoolNotes() {
       {/* Main area: sidebar + content */}
       <div style={{
         display: 'flex',
+        flexWrap: 'wrap',
         flex: 1,
         width: '100%',
       }}>
         {/* Left sidebar */}
         <div style={{
           width: '280px',
+          minWidth: '200px',
           flexShrink: 0,
-          padding: '0 1.5rem',
+          padding: '0 clamp(1rem, 3vw, 1.5rem)',
           borderRight: '1px solid #eaeaea',
           textAlign: 'left',
         }}>
@@ -153,7 +157,8 @@ function SchoolNotes() {
         {/* Center content */}
         <div style={{
           flex: 1,
-          padding: '0 3rem',
+          minWidth: 0,
+          padding: '0 clamp(1rem, 5vw, 3rem)',
           maxWidth: '800px',
           textAlign: 'left',
         }}>

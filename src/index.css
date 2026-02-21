@@ -98,4 +98,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em !important;
+  }
+}
+
 
