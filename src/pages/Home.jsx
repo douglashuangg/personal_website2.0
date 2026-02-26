@@ -16,7 +16,7 @@ function Home() {
           position: 'relative',
           zIndex: 1
         }}>
-          Hi! I'm a mechatronics engineering student at the University of Waterloo. I make embedded systems work. Hit me up to talk about drones, autonomous vehicles, wearables and more. Previously at Avidrone Aerospace building cargo delivery drones.
+          Hi! I'm a mechatronics engineering student at the University of Waterloo. I'm interested in firmware for all types of embedded systems like drones, wearables, and autonomous vehicles. Previously at Avidrone Aerospace building cargo delivery drones.
           <br /><br />
           In my spare time, you will catch me training for my next marathon, playing volleyball (or any sport really), or reading a good book <a href="/bookshelf" style={{ color: '#4A7FB5', fontStyle: 'italic' }}>(check out my bookshelf)</a>. I'm also trying to learn enough Chinese to read a Chinese newspaper by the end of this year.
         </p>
