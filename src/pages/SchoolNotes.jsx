@@ -171,7 +171,16 @@ function SchoolNotes() {
               {loading ? (
                 <p style={{ color: '#999' }}>Loading notes...</p>
               ) : (
-                <ReactMarkdown>{markdown}</ReactMarkdown>
+                <ReactMarkdown
+                  components={{
+                    img: ({ node, ...props }) => (
+                      <img {...props} style={{ maxWidth: '500px', width: '100%', display: 'block', margin: '1rem 0' }} />
+                    ),
+                    h1: ({ node, ...props }) => <h1 {...props} style={{ margin: '0.3rem 0 0.15rem' }} />,
+                    h2: ({ node, ...props }) => <h2 {...props} style={{ margin: '0.3rem 0 0.15rem' }} />,
+                    h3: ({ node, ...props }) => <h3 {...props} style={{ margin: '0.25rem 0 0.1rem' }} />,
+                  }}
+                >{markdown}</ReactMarkdown>
               )}
             </div>
           ) : (
